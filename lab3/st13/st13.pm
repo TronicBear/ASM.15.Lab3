@@ -110,10 +110,10 @@ ENDHTML
 	 foreach my $pers (@spisok) {
 		 		my $pos;
 		 		if($pers->{pos} eq "0"){
-					$pos = "Планктон";
+					$pos = "Стажер";
 				}
 				else{
-					$pos = "Акула бизнеса";
+					$pos = "Босс";
 				}
 	 			print <<ENDHTML;
                    <tr>
@@ -154,7 +154,7 @@ ENDHTML
 else{
 	print <<ENDHTML;
 	<input hidden="true" name="student" value="$global->{student}">
-	<label>Акула бизнеса</label><br>
+	<label>Босс</label><br>
 	<label style="margin-bottom: 5px; margin-top: 5px;">ФИО:</label>
 	<input type="text" name="fio" value="$f" placeholder="Введите ФИО" style="margin-left: 50px; margin-bottom: 5px; width: 250px " > <br>
 	<label>Возраст:</label>
@@ -174,7 +174,7 @@ ENDHTML
 		<label>Должность:</label>
 		<select name="pos" id="pos" style="margin-left: 10px; margin-top: 5px; margin-bottom: 5px; width: 250px">
 						<option value="0">Стажер</option>
-						<option value="1">Акула бизнеса</option>
+						<option value="1">Босс</option>
 		</select><br>
 		<label>ФИО:</label>
 		<input type="text" name="fio" placeholder="Введите ФИО" style="margin-left: 50px; margin-bottom: 5px; width: 250px " > <br>
