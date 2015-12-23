@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Ноя 29 2015 г., 12:35
+-- Время создания: Дек 23 2015 г., 18:58
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -33,18 +33,18 @@ CREATE TABLE IF NOT EXISTS `st13` (
   `pos` varchar(250) NOT NULL,
   `wage` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
 
 --
 -- Дамп данных таблицы `st13`
 --
 
 INSERT INTO `st13` (`id`, `fio`, `age`, `pos`, `wage`) VALUES
-(8, 'фыва', 56, '0', '300'),
-(9, 'Михаил', 100, '0', '350'),
-(10, 'Дмитрий', 11, '0', '370'),
-(11, 'Церен', 59, '1', '1000000'),
-(12, 'Михаил', 45, '1', '1000000');
+(20, 'Катя', 11, '0', 0),
+(21, 'Михаил', 22, '0', 0),
+(24, 'Церен', 44, '1', 12345),
+(27, 'Дмитрий', 55, '0', 0),
+(28, 'Михаил', 33, '1', 12345);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

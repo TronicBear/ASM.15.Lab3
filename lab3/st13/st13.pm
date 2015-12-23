@@ -64,8 +64,8 @@ sub DoLoad{
 				my $wage = $fields->{wage};
 				my %rec = (
         				id => $id,
-                name => $fio,
-                age => $age,
+						fio => $fio,
+						age => $age,
 								pos => $pos,
 								wage => $wage
             );
@@ -119,7 +119,7 @@ ENDHTML
                    <tr>
                    <input type="hidden" name="id" value="$pers->{id}">
                    <td>$k</td>
-                   <td>$pers->{name}</td>
+                   <td>$pers->{fio}</td>
                    <td>$pers->{age}</td>
 									 <td>$pos</td>
 									 <td align="center">$pers->{wage}</td>
@@ -134,7 +134,7 @@ ENDHTML
 		my $num = $q->param('button');
 		$num=~ s/edit//;
 		$num--;
-		my $f = @spisok[$num]->{name};
+		my $f = @spisok[$num]->{fio};
 		my $a = @spisok[$num]->{age};
 		my $p = @spisok[$num]->{pos};
 		my $w = @spisok[$num]->{wage};
